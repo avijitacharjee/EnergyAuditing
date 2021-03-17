@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "202216093064",
+    "firebase_url": "https://effenergy-f5611.firebaseio.com",
+    "project_id": "effenergy-f5611",
+    "storage_bucket": "effenergy-f5611.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202216093064:android:75bcdbd6d3265ef76e363d",
+        "android_client_info": {
+          "package_name": "energyaudit.example.com.enerngyauditing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202216093064-rr8ounfn2igprf733rjcmhlgc0fv381b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDJon_A2kvVrGQT6_cGD4W6uR2SMa6YUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202216093064-rr8ounfn2igprf733rjcmhlgc0fv381b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

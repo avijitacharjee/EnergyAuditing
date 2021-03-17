@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_SVPM"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorBlack">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_RL_PM"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBlack"
+    tools:context="energyaudit.example.com.enerngyauditing.EnrgiSavingActivity" >
+
+    <View
+        android:id="@+id/vcrLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Home Electricity Saving Tips"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <View
+        android:id="@+id/vcrLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 1: Breathin' Easy"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip1"
+        android:src="@mipmap/tip1" />
+    <TextView
+        android:id="@+id/texttip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip1"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip1"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 2: Switch out your light bulbs"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip2"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip2"
+        android:src="@mipmap/tip2" />
+    <TextView
+        android:id="@+id/texttip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip2"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip2"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 3: fans cool people, not rooms"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip3"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip3"
+        android:src="@mipmap/tip3" />
+    <TextView
+        android:id="@+id/texttip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip3"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip3"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 4: Save it for later"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine5"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip4"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip4"
+        android:src="@mipmap/tip4" />
+    <TextView
+        android:id="@+id/texttip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip4"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip4"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip4"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 5: Hide-And-go-heat"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine6"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip5"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip5"
+        android:src="@mipmap/tip5" />
+    <TextView
+        android:id="@+id/texttip5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip5"
+        android:textAllCaps="false"
+        android:layout_below="@id/imgtip5"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip5"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 6: get low"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine7"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip6"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip6"
+        android:src="@mipmap/tip61" />
+    <TextView
+        android:id="@+id/texttip6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip6"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip6"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip6"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 7: get smart"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine8"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip7"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip7"
+        android:src="@mipmap/tip7" />
+    <TextView
+        android:id="@+id/texttip7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip7"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip7"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip7"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 8: where there's a vent there's a way"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine9"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip8"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip8"
+        android:src="@mipmap/tip8" />
+    <TextView
+        android:id="@+id/texttip8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip8"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip8"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip8"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 9: switch up how you cook"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine10"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip9"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip9"
+        android:src="@mipmap/tip9" />
+    <TextView
+        android:id="@+id/texttip9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip9"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip9"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip9"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/tip10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip 10: seal it up"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/vcrLine11"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lightcoral" />
+    <ImageView
+        android:id="@+id/imgtip10"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/tip10"
+        android:src="@mipmap/tip10" />
+    <TextView
+        android:id="@+id/texttip10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/main.msg.tip10"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imgtip10"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+    <View
+        android:id="@+id/vcrLine13"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/texttip10"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack"/>
+
+</RelativeLayout>
+
+</ScrollView>

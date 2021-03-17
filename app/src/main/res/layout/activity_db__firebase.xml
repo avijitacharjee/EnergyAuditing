@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_Database_Home"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorBlack">
+
+<RelativeLayout
+    android:id="@+id/activity_RL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlack"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="energyaudit.example.com.enerngyauditing.Db_Firebase">
+
+    <EditText
+        android:id="@+id/etrr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Lens"
+        android:imeOptions="actionGo"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorLightGray" />
+
+    <LinearLayout
+        android:id="@+id/tvll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etrr"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Energy Bill Calculation"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/lightcoral" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vcrLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvll"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorGainsboro" />
+
+    <LinearLayout
+        android:id="@+id/etdevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vcrLine"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="none">
+
+        <EditText
+            android:id="@+id/etdevicename"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_image_buttons"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Electrical Device Name?"
+            android:inputType="text"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic"
+            android:textColor="@color/colorDarkGray"
+            android:textColorHint="@color/colorDarkGray" />
+
+        <EditText
+            android:id="@+id/etdeviceunits"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_image_buttons"
+            android:layout_below="@+id/tvkWh"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="Device Units?"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorDarkGray"
+            android:textStyle="italic"
+            android:textColorHint="@color/colorDarkGray" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/etdevice"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack" />
+    <LinearLayout
+        android:id="@+id/etdeviceinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vLine1"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="none">
+
+        <EditText
+            android:id="@+id/etdevicewatt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_image_buttons"
+            android:layout_below="@+id/tvkWh"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Device Wattage?"
+            android:inputType="number"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic"
+            android:textColor="@color/colorDarkGray"
+            android:textColorHint="@color/colorDarkGray" />
+
+        <EditText
+            android:id="@+id/etdevicehrs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_image_buttons"
+            android:layout_below="@+id/tvkWh"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="Device Usage Hours?"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic"
+            android:textColor="@color/colorDarkGray"
+            android:textColorHint="@color/colorDarkGray" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/etdeviceinfo"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack" />
+    <LinearLayout
+        android:id="@+id/deviceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vLine2"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="none">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:text="Add"
+            android:drawableTop="@android:drawable/ic_input_add"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorGainsboro" />
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:drawableTop="@android:drawable/ic_menu_info_details"
+            android:text="View"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorGainsboro" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etIDUD"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_image_buttons"
+        android:layout_below="@id/deviceButton"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Device ID to Update/Delete?"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="italic"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorDarkGray" />
+
+    <View
+        android:id="@+id/vLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/etIDUD"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/deviceButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vLine3"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="none">
+
+        <Button
+            android:id="@+id/btnUpd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:text="Update"
+            android:drawableTop="@android:drawable/ic_menu_revert"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorGainsboro" />
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:gravity="center"
+            android:text="Delete"
+            android:drawableTop="@android:drawable/ic_delete"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorGainsboro" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/deviceButton1"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorGainsboro" />
+
+    <LinearLayout
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vLine4"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="none">
+        <TextView
+            android:id="@+id/tvoutput"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/lightcoral" />
+        <TextView
+            android:id="@+id/kWhop"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="kWh Reading"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/lightcoral"/>
+
+        <TextView
+            android:id="@+id/costop"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Price(NAD, N$)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/lightcoral"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/output1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/output"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="none">
+        <TextView
+            android:id="@+id/tvhourop"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hourly Stats"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/lightcoral" />
+        <TextView
+            android:id="@+id/kWhhourop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+
+        <TextView
+            android:id="@+id/costhourop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhcostresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/output2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/output1"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tvdailyop"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Daily Stats"
+            android:textStyle="bold"
+            android:textColor="@color/lightcoral"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/kWhdailyop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+
+        <TextView
+            android:id="@+id/costdailyop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhcostresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/output3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/output2"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tvMonthlyop"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Weekly Stats"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/lightcoral" />
+        <TextView
+            android:id="@+id/kWhweekop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+
+
+        <TextView
+            android:id="@+id/costweekop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhcostresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/output4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/output3"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tvYearop"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Monthly Stats"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/lightcoral" />
+        <TextView
+            android:id="@+id/kWhmonthop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+
+        <TextView
+            android:id="@+id/costmonthop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.kWhcostresult"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGray" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/output4"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorGainsboro" />
+
+    <TextView
+        android:id="@+id/dailykWh"
+        android:textColor="@color/lightcoral"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/vLine5"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:padding="9dp"
+        android:id="@+id/nsw"
+        android:layout_below="@+id/dailykWh"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dDetails"
+            android:textColor="@color/lightcoral"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nsw"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_shape"
+        android:gravity="center"
+        android:drawableTop="@android:drawable/ic_lock_idle_charging"
+        android:text=" Electricity Saving Tips"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorGainsboro" />
+
+    <View
+        android:id="@+id/vLine300"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/buttonNext"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorGainsboro" />
+
+</RelativeLayout>
+
+</ScrollView>
+

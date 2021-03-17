@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EffEnergy Auditing</string>
+    <string name="main.msg.kWhcostresult"> </string>
+    <string name="main.msg.kWhresult"> </string>
+    <string name="main.msg.tip1">Clean or change AC filters once a month – This tip will keep your air conditioner functioning at its best. The better it can breathe, the more efficiently it can keep your home cool. If you use a room air conditioner, avoid placing any appliance nearby that would generate heat, such as lamps, a computer or a television. The extra heat may interfere with the air conditioner’s thermostat.</string>
+    <string name="main.msg.tip2">Switch out your light bulbs – Install LED lights because they produce light without generating extra heat, unlike more traditional incandescent bulbs. You’ll use up to 90% less energy and save up to $80 over the bulb’s lifetime. And, the more you switch, the more you’ll save.</string>
+    <string name="main.msg.tip3">Use the wind-chill factor – Try using a portable fan to blow cooler air toward your face or feet. Also, don’t forget to turn your ceiling fan off when you leave the room. Remember, fans cool people, not rooms.</string>
+    <string name="main.msg.tip4">Save it for later – Feel like procrastinating on some of those household tasks? Now you have good reason to. Wait to do heat producing tasks like baking, using the dishwasher and doing the laundry until cooler hours like late afternoons and evenings.</string>
+    <string name="main.msg.tip5"> Use windows and blinds to your advantage – Open your windows to let in the cooler air at night. Close your blinds or curtains during the day to keep sunlight from heating up the air inside your house. Have you tried insulated or blackout curtains? They do a terrific job keeping the sun at bay.</string>
+    <string name="main.msg.tip6">Get low – When it’s really hot out, try hanging out in the basement or lowest floor in your home. You’ll stay cool as your home’s cold air naturally sinks to your level.</string>
+    <string name="main.msg.tip7">Program your thermostat – When no one is home, why waste energy cooling your home? Program your thermostat to a higher temperature when the house is empty. You can save about 1-3 percent per degree, according to the U.S. Department of Energy. </string>
+    <string name="main.msg.tip8">Keep air vents clear – Chances are, somewhere in your house a vent is being partially blocked by furniture or drapery. Take a few minutes to rearrange your furniture so that all vents are exposed for maximum efficiency, or install vent deflectors. They’re inexpensive and will redirect the air flow around obstructions.</string>
+    <string name="main.msg.tip9">Switch up how you cook – Avoid using the oven because it can turn your house into an oven. Instead, step outside and use your grill. Or, use the microwave or a slow cooker. Better yet, try meals and snacks that don’t require cooking, like a refreshing salad.</string>
+    <string name="main.msg.tip10">Seal it up — Make sure cracks and gaps around doors and windows are sealed. Just as you don’t want to let cold air into your home in winter, you also don’t want to let warm air in during the summer.</string>
+    <string name="enter_name">Name?</string>
+</resources>
