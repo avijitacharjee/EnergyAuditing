@@ -1,8 +1,8 @@
 package energyaudit.example.com.enerngyauditing;
 
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,9 +11,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -133,7 +138,17 @@ public class Db_Firebase extends AppCompatActivity implements View.OnClickListen
     //Adding Users Device Details to FireBase
     private void addHomeDevices() {
         data();
-        devDatacollectionRef.add(data());
+        devDatacollectionRef.add(data()).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                Toast.makeText(Db_Firebase.this, "Succuessfully saved", Toast.LENGTH_SHORT).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@androidx.annotation.NonNull Exception e) {
+                Toast.makeText(Db_Firebase.this, ""+e, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     //Retrieve Users Device Details from FireBase
     public void viewHomeDevices(){
@@ -262,6 +277,26 @@ public class Db_Firebase extends AppCompatActivity implements View.OnClickListen
                         Log.d(TAG,"onFailure: " + e.toString());
                     }
                 });
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage("Are you sure to exit?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finishAffinity();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .create()
+                .show();
     }
 }
 

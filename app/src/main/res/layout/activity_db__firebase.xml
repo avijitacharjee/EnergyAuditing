@@ -507,7 +507,7 @@ android:background="@color/colorBlack">
         android:layout_below="@+id/vLine5"
         android:layout_height="wrap_content" />
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:padding="9dp"
         android:id="@+id/nsw"
@@ -521,7 +521,7 @@ android:background="@color/colorBlack">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 
     <Button
